@@ -28,7 +28,7 @@ export default function Signup() {
         try {
             await axios.post(`http://localhost:8000/api/auth/register/`, formData);
             toast.success('Signup successful');
-            navigate('/auth/login');
+            navigate('/');
             
         } catch (err) {
             console.log(err.response.data)
