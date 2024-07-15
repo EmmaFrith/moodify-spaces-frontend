@@ -3,6 +3,7 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify'
+import { baseUrl } from '../config'
 
 export default function Signup() {
 
@@ -26,7 +27,7 @@ export default function Signup() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            await axios.post(`http://localhost:8000/api/auth/register/`, formData);
+            await axios.post(`${baseUrl}/api/auth/register/`, formData);
             toast.success('Signup successful');
             navigate('/');
             
