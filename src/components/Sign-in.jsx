@@ -21,7 +21,7 @@ export default function Signin() {
     async function handleSubmit(e) {
         e.preventDefault()
         try {
-            const { data } = await axios.post(`${baseUrl}api/auth/login/`, formData);
+            const { data } = await axios.post(`${baseUrl}/api/auth/login/`, formData);
             const token = data.token
             console.log(token)
             localStorage.setItem('token', token)
