@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { baseUrl } from '../config';
+import { Link } from "react-router-dom";
 
 const ItemDetail = () => {
     const { id } = useParams();
@@ -55,6 +56,9 @@ const ItemDetail = () => {
             <div className="container">
                 {<button className="button is-danger" onClick={handleDelete}>Delete item</button>}
             </div>
+            <Link to={`/edit-item/${id}`}>
+                <button className="button is-danger">Edit item</button>
+            </Link>
         </div>
     );
 };
