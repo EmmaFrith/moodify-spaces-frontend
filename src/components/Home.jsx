@@ -36,6 +36,7 @@ const Home = () => {
           </Link>
         ))}
       </div>
+      {<button className="button is-primary">Add an item</button>}
     </div>
   );
 };
