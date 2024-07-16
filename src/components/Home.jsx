@@ -25,8 +25,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="section">
-      <div className="columns is-multiline is-mobile">
+    <div>
+      <h1>Your moodboard</h1>
+      <div>
         {items.map((item, index) => (
           <Link key={index} to={`/items/${item.id}`}>
             <div >
