@@ -29,7 +29,7 @@ export default function Signup() {
         try {
             await axios.post(`${baseUrl}/api/auth/register/`, formData);
             toast.success('Signup successful');
-            navigate('/');
+            navigate('/sign-in');
             
         } catch (err) {
             console.log(err.response.data)

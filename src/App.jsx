@@ -6,6 +6,7 @@ import Signin from './components/Sign-in'
 import ShowItem from './components/Show-item'
 import AddItem from './components/Add-item'
 import EditItem from './components/Edit-item'
+import Navbar from './components/Navbar'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/items/:id" element={<ShowItem />}/>
