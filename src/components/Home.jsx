@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { baseUrl } from '../config';
+import '../App.css'
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -27,10 +28,10 @@ const Home = () => {
   return (
     <div>
       <h1>Your moodboard</h1>
-      <div>
+      <div className="moodboard-items">
         {items.map((item, index) => (
           <Link key={index} to={`/items/${item.id}`}>
-            <div >
+            <div className="moodboard-item">
               <img src={item.image} />
             </div>
           </Link>
