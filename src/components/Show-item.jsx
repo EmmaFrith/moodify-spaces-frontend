@@ -49,17 +49,18 @@ const ItemDetail = () => {
             {item && (
                 <div>
                     <h1>{item.name}</h1>
+                    <h2>{item.shop}</h2>
                     <div className="moodboard-item">
                         <img src={item.image} alt={item.title} />
+                        <div className="container">
+                            <Link to={`/edit-item/${id}`}>
+                                <button className="button">Edit item</button>
+                            </Link>
+                            {<button className="button is-danger" onClick={handleDelete}>Delete item</button>}
+                        </div>
                     </div>
                 </div>
             )}
-            <div className="container">
-                {<button className="button is-danger" onClick={handleDelete}>Delete item</button>}
-            </div>
-            <Link to={`/edit-item/${id}`}>
-                <button className="button is-danger">Edit item</button>
-            </Link>
         </div>
     );
 };

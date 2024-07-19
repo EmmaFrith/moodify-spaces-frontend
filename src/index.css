@@ -34,13 +34,19 @@ form {
 h1 {
   font-size: 1.5em;
   line-height: 1.1;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-top: 2em;
   display: flex;
   justify-content: flex-start;
 }
 
-
+h2 {
+  font-size: 1.2em;
+  line-height: 1.1;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: flex-start;
+}
 
 button {
   border-radius: 8px;

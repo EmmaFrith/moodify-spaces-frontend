@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { baseUrl } from '../config';
+import '../App.css'
+
 
 const EditItem = () => {
     const navigate = useNavigate();
@@ -55,6 +57,7 @@ const EditItem = () => {
         <div className="section">
             <div className="container">
                 <form onSubmit={handleSubmit}>
+                    <h1>Edit {formData.name}</h1>
                     <div className="field">
                         <label className="label">Name</label>
                         <div className="control">
@@ -96,7 +99,7 @@ const EditItem = () => {
                     </div>
                     <div className="field">
                         <div className="control">
-                            <button type="submit" className="button is-primary">
+                            <button type="submit" className="button is-primary submit-button">
                                 Edit Item
                             </button>
                         </div>
