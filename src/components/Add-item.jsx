@@ -40,6 +40,7 @@ const AddItem = () => {
     <div className="section">
       <div className="container">
         <form onSubmit={handleSubmit}>
+            <h1>Add an item</h1>
           <div className="field">
             <label className="label">Name</label>
             <div className="control">

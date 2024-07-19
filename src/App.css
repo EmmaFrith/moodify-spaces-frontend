@@ -14,18 +14,30 @@
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
 .moodboard-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: flex-start; */
+  align-content: space-between;
 
 }
 
 .moodboard-item {
   margin: 30px;
+  display: flex;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2em;
+  color: black;
 }

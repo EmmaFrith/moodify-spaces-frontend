@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { baseUrl } from '../config';
 import { Link } from "react-router-dom";
+import '../App.css'
 
 const ItemDetail = () => {
     const { id } = useParams();
@@ -48,7 +49,7 @@ const ItemDetail = () => {
             {item && (
                 <div>
                     <h1>{item.name}</h1>
-                    <div>
+                    <div className="moodboard-item">
                         <img src={item.image} alt={item.title} />
                     </div>
                 </div>

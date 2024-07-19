@@ -23,13 +23,14 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-menu is-active">
-                <Link to="/"><div className="logo"></div></Link>
+                <Link to="/"><div className="logo">Moodify Spaces.</div></Link>
                 <div className="navbar-item">
                     <div className="buttons">
                         {isLoggedIn && <Link to="/" className="button is-warning">Your moodboard</Link>}
                         {!isLoggedIn && <Link to="/sign-up" className="button is-warning">Sign up</Link>}
                         {!isLoggedIn && <Link to="/sign-in" className="button is-success">Sign in</Link>}
                         {isLoggedIn && <button className="button" onClick={logout}>Sign out</button>}
+                        {isLoggedIn && <Link to="/add-item"><button className="button is-primary">Add an item</button></Link>}
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from '../config'
+import '../App.css'
 
 export default function Signin() {
     const navigate = useNavigate()
@@ -33,9 +34,9 @@ export default function Signin() {
     }
 
     return <div className="section">
-        <h1>Sign in</h1>
         <div className="container">
             <form onSubmit={handleSubmit}>
+                <h1>Sign in</h1>
                 <div className="field">
                     <label className="label">Email</label>
                     <div className="control">
