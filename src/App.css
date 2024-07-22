@@ -64,3 +64,11 @@ img {
   align-content: flex-start;
 }
 
+.home-h1 {
+  display: inline-block;
+  padding: 70px 70px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYLmIAHNtDjQ4lwQEuWg4zSlEPCac6s_1_YQ&s') no-repeat center center;
+  background-size: 110% 110%;
+  font-size: 20px;
+}
+

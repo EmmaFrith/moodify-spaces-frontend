@@ -27,7 +27,7 @@ function Navbar() {
                 <div className="navbar-item">
                     <div className="buttons">
                         {isLoggedIn && location.pathname !== '/' && (
-                            <Link to="/" className="button is-warning">Your moodboard</Link>
+                            <Link to="/" className="button is-warning">Moodboard</Link>
                         )}
                         {!isLoggedIn && location.pathname !== '/sign-up' && (
                             <Link to="/sign-up" className="button is-warning">Sign up</Link>

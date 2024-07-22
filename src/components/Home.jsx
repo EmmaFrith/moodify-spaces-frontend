@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Your moodboard</h1>
+      <h1 className="home-h1">Moodboard</h1>
       <div className="moodboard-items">
         {items.length === 0 ? (
           <p>Add an item to get started.</p>
