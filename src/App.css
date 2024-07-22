@@ -54,3 +54,13 @@ img {
 .submit-button {
   margin-top: 20px;
 }
+
+.section-start-page {
+  display: flex;
+  align-content: flex-start;
+}
+
+.container-about {
+  align-content: flex-start;
+}
+

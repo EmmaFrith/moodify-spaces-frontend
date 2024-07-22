@@ -35,6 +35,10 @@ export default function Signin() {
 
     return <div className="section">
         <div className="container">
+            <h1>Curate your space.</h1>
+            <p>Set your interior design vision with the Moodify Spaces moodboard.</p>
+        </div>
+        <div className="container">
             <form onSubmit={handleSubmit}>
                 <h1>Sign in</h1>
                 <div className="field">

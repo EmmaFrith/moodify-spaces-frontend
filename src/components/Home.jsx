@@ -29,13 +29,17 @@ const Home = () => {
     <div>
       <h1>Your moodboard</h1>
       <div className="moodboard-items">
-        {items.map((item, index) => (
-          <Link key={index} to={`/items/${item.id}`}>
-            <div className="moodboard-item">
-              <img src={item.image} />
-            </div>
-          </Link>
-        ))}
+        {items.length === 0 ? (
+          <p>Add an item to get started.</p>
+        ) : (
+          items.map((item, index) => (
+            <Link key={index} to={`/items/${item.id}`}>
+              <div className="moodboard-item">
+                <img src={item.image} alt={item.name} />
+              </div>
+            </Link>
+          ))
+        )}
       </div>
     </div>
   );
