@@ -26,11 +26,19 @@ function Navbar() {
                 <Link to="/"><div className="logo">Moodify Spaces.</div></Link>
                 <div className="navbar-item">
                     <div className="buttons">
-                        {isLoggedIn && <Link to="/" className="button is-warning">Your moodboard</Link>}
-                        {!isLoggedIn && <Link to="/sign-up" className="button is-warning">Sign up</Link>}
-                        {!isLoggedIn && <Link to="/sign-in" className="button is-success">Sign in</Link>}
+                        {isLoggedIn && location.pathname !== '/' && (
+                            <Link to="/" className="button is-warning">Your moodboard</Link>
+                        )}
+                        {!isLoggedIn && location.pathname !== '/sign-up' && (
+                            <Link to="/sign-up" className="button is-warning">Sign up</Link>
+                        )}
+                        {!isLoggedIn && location.pathname !== '/sign-in' && (
+                            <Link to="/sign-in" className="button is-warning">Sign in</Link>
+                        )}
+                         {isLoggedIn && location.pathname !== '/add-item' && (
+                            <Link to="/add-item"><button className="button is-primary">Add an item</button></Link>
+                        )}
                         {isLoggedIn && <button className="button" onClick={logout}>Sign out</button>}
-                        {isLoggedIn && <Link to="/add-item"><button className="button is-primary">Add an item</button></Link>}
                     </div>
                 </div>
             </div>

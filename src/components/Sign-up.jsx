@@ -96,7 +96,7 @@ export default function Signup() {
                             />
                         </div>
                     </div>
-                    <button className="button is-danger" type="submit">Submit</button>
+                    <button className="button is-success" type="submit">Submit</button>
                 </form>
             </div>
 

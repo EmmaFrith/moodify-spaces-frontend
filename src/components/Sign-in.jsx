@@ -67,7 +67,7 @@ export default function Signin() {
                         />
                     </div>
                 </div>
-                <button className="button is-danger">Submit</button>
+                <button className="button is-success">Submit</button>
             </form>
             <ToastContainer
                 position="bottom-center"
