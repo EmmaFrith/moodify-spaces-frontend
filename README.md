@@ -22,7 +22,7 @@ I would like to:
 
 # Screenshots
 
-![A Moodify Spaces moodboard](./images/moodify-spaces-moodboard.png)
+![A Moodify Spaces moodboard](./images/moodboard.png)
 
 ![The sign up page](./images/sign-up.png)
 
