@@ -1,8 +1,35 @@
-# React + Vite
+# Moodify Spaces 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Moodify Spaces allows you to add items to a moodboard to curate an interior scheme. 
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can add, edit and delete images from a moodboard.
+
+You can add details about the item, so that you can find it again later, including:
+
+* what it is called
+* where it's from
+
+Users need to sign up and sign in to create a moodboard.
+
+# Future enhancements 
+
+I would like to:
+
+* allow users to create different interior design schemes (currently, you can only have one moodboard)
+* find alternative ways to allow users to add images (currently, you need to add an image url)
+
+# Screenshots
+
+![A Moodify Spaces moodboard ](./images/moodify-spaces-moodboard.png)
+
+
+# Technologies
+
+This site is built using Python, Django and React. 
+
+# Planning materials 
+
+![I mapped out the user journey using Excalidraw.](./images/planning-materials.png)
+
